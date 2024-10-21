@@ -1,0 +1,334 @@
+body {
+  background-color: #c1c5c9;
+  font-family: "Laila", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.logo {
+  width: 170px;
+  height: auto;
+  display: block;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c47c63;
+  padding: 10px;
+  height: 10rem;
+  margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+    text-align: center;
+    font-family: "Laila", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation li{
+  list-style:none;
+  padding: 10px;
+}
+.navigation li a{
+  font-size: 1.4rem;
+  color: #3f3f3f;
+  text-decoration: none;
+  border: none;
+}
+.navigation li:hover {
+  background-color: #3f3f3f;
+  text-decoration: none;
+  color: #bba097;
+}
+.navigation li a:hover {
+  color: #bba097;
+}
+
+.introduction {
+    font-family: "Laila", serif;
+    color: #3f3f3f;
+    font-size: 1.5em;
+    line-height: 1.8;
+    margin: 60px 0;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.text-specialties {
+    font-size: 1.7em;
+    color: #868a74;
+    font-weight: bold;
+    margin: 45px 0;
+    text-align: center;
+}
+
+footer {
+  background-color: #bba097;
+  padding: 4px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 850px;
+    border-radius: 30px;
+}
+
+.quote {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Laila', sans-serif;
+    font-size: 1.25em;
+    max-width: 80%;
+}
+
+.quote{
+  text-align: center;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+}
+.selfphoto img {
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px;
+}
+
+.four-column{
+  margin: 0 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  font-size: 1.5em;
+  color: white;
+}
+#headshotimage {
+  background: url(images/IMG_4566.JPG);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+}
+#eventsimage{
+  background-image: url(images/IMG_4323.JPG);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+}
+#couplesimage{
+  background-image: url(images/IMG_8559.JPG);
+  background-size: 220%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+}
+#graduationimage{
+  background-image: url(images/IMG_6656.JPG);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+}
+#about .two-column {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 40px;
+  background-color: #c47c63;
+}
+#about .two-column div {
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #c47c63;
+}
+#portfolio .two-column {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 40px;
+  background-color: #bba097;
+}
+#portfolio .two-column div {
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #bba097;
+}
+
+.gallery {
+    padding: 10px;
+    text-align: center;
+    background-color: #bba097;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 0 1 250px;
+    max-width: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 215px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(2);
+}
+
+.contact-form-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #868a74;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+.contact-form-section h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.contact-form-section label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.contact-form-section button {
+    padding: 10px 15px;
+    background-color: #3f3f3f;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form-section button:hover {
+    background-color: #c47c63;
+}
+
+.two-column {
+    margin-top: 20px;
+}
+
+.five-column img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 20px;
+}
+.two-column {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 40px;
+    background-color: #c47c63;
+}
+.two-column div {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #c47c63;
+}
+
+body {
+    background-color: #bba097;
+  }
+.two-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.two-column p {
+    margin-left: 80px;
+}
+
+footer .three-column {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 40px;
+    background-color: #c47c63;
+}
+
+footer .three-column div {
+  background-color: #c47c63;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.five-column {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.five-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
